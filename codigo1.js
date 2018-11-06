@@ -14,9 +14,12 @@ function casillaAleatoria(){
   filaFinal=Math.floor(Math.random() * 6 + 1);
   posFinal[1]=filaFinal;
   if (posInicial[0,1]=posFinal[0,1]) {
-    casillaAleatoria();
+    columnaFinal=Math.floor(Math.random() * 6 + 1);
+    posFinal[0]=columnaFinal;
+    filaFinal=Math.floor(Math.random() * 6 + 1);
+    posFinal[1]=filaFinal;
+}
   }
-  }
-  casillaAleatoria();
+casillaAleatoria();
 console.log(`La posicion inicial es: Columna ${posInicial[0]} Fila ${posInicial[1]}`);
 console.log(`La posicion final es: Columna ${posFinal[0]} Fila ${posFinal[1]}`);
